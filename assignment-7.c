@@ -175,43 +175,58 @@
 // 9. Write a program to check whether a given number is an Armstrong number
 // or not
 
-// #include<stdio.h>
+// #include <stdio.h>
+// #include <math.h>
 // int main(){
-//     int num,arm=0,i,num1;
+//     int num,arm=0,i,num1,num2,count=0;
 //     printf("enter the num to check armstrong or not:- ");
 //     scanf("%d",&num);
 //     num1=num;
+//     num2=num;
 //     while(num){
-//         i=num%10;
-//         num=num/10;
-//         arm += i*i*i;
+//         num/=10;
+//         count++;
+//     }    
+//     while(num1){
+//         i=num1%10;
+//         num1=num1/10;
+//         arm += pow(i,count);
 //     }
-//     if(num1==arm){
-//         printf("%d is an armstrong num",num1);
+//     if(num2==arm){
+//         printf("%d is an armstrong num",num2);
 //     }
 //     else{
 //         printf("not\n");
 //     }
+//     return 0;
 // }
 
 
 // 10. Write a program to print all Armstrong numbers under 1000
 
-#include<stdio.h>
-int main(){
-    int num,arm,i;
+// #include<stdio.h>
+// #include<math.h>
+// int main(){
+//     int num,arm,num1,i,count;
     
-    for(int ie=0;ie<=1000;ie++){
-        arm=0;
-        num=ie;
-        //num1=num;
-        while(num){
-            i=num%10;
-            num=num/10;
-            arm += i*i*i;
-        }
-        if(ie==arm){
-            printf("%d ",ie);
-        }
-    }
-}
+//     for(int ie=0;ie<=10000;ie++){
+//         if(ie>1 && ie<=10)
+//             continue;
+//         arm=0;
+//         count=0;
+//         num=ie;
+//         num1=num;
+//         while(num1){
+//              num1/=10;
+//             count++;
+//         } 
+//         while(num){
+//             i=num%10;
+//             num=num/10;
+//             arm += pow(i,count);
+//         }
+//         if(ie==arm){
+//             printf("%d ",ie);
+//         }
+//     }
+// }
